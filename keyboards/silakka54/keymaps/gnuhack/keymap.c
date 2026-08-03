@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                                ES_Y,    ES_U,    ES_I,    ES_O,    ES_P,    KC_BSPC,
         my_GUI,  ES_A,    ES_S,    ES_D,    ES_F,    ES_G,                                ES_H,    ES_J,    ES_K,    ES_L,    ES_NTIL, ES_ACUT,
         my_SHFT, ES_Z,    ES_X,    ES_C,    ES_V,    ES_B,                                ES_N,    ES_M,    ES_COMM, ES_DOT,  ES_MINS, my_SHFT,
-                        	OSM(MOD_LALT), OSM(MOD_LCTL), my_SPC,            my_ENT,  OSM(MOD_RCTL),  OSM(MOD_RALT)
+                        	OSM(MOD_LALT), OSM(MOD_LCTL), my_SPC,            my_ENT,  OSM(MOD_RCTL),  OSM(MOD_LALT)
     ),
 
     [_EXT] = LAYOUT(
