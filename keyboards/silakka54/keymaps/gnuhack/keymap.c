@@ -30,8 +30,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EXT] = LAYOUT(
         KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                               KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
         ES_LBRC, ES_RBRC, ES_LCBR, ES_RCBR, ES_LPRN, ES_RPRN,                             KC_PGUP, KC_PGDN, KC_HOME, KC_END,  KC_DEL,  KC_TRNS,
-        KC_TRNS, ES_EQL,  ES_TILD, ES_PLUS, ES_DQUO, KC_TRNS,                             KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ES_ACNT, ES_CCED,
-        QK_REP,  KC_TRNS, ES_ASTR, ES_SCLN, ES_GRAVE,ES_QUOT,                             ES_BSLS, ES_PIPE, ES_LABK, ES_RABK, KC_TRNS, QK_REP,
+        ES_IEXL, ES_EXLM, ES_IQUE, ES_QUES, ES_AT,   ES_EQL,                              KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ES_TILD, ES_CCED,
+        QK_REP,  ES_PLUS, ES_ASTR, ES_SCLN, ES_GRAVE,ES_QUOT,                             ES_BSLS, ES_PIPE, ES_LABK, ES_RABK, ES_DQUO, QK_REP,
                                             KC_TRNS, KC_TAB, KC_ESC,            KC_TRNS, KC_BSPC, KC_TRNS
     ),
 
