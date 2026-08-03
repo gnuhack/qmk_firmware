@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_MAIN] = LAYOUT(
         KC_ESC,  ES_1,    ES_2,    ES_3,    ES_4,    ES_5,                                ES_6,    ES_7,    ES_8,    ES_9,    ES_0,    OSL(_FN),
         KC_TAB,  ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                                ES_Y,    ES_U,    ES_I,    ES_O,    ES_P,    KC_BSPC,
-        my_GUI,  ES_A,    ES_S,    ES_D,    ES_F,    ES_G,                                ES_H,    ES_J,    ES_K,    ES_L,    ES_NTIL, ES_ACNT,
+        my_GUI,  ES_A,    ES_S,    ES_D,    ES_F,    ES_G,                                ES_H,    ES_J,    ES_K,    ES_L,    ES_NTIL, ES_ACUT,
         my_SHFT, ES_Z,    ES_X,    ES_C,    ES_V,    ES_B,                                ES_N,    ES_M,    ES_COMM, ES_DOT,  ES_MINS, my_SHFT,
                                             my_ALT, my_CTRL, my_SPC,            my_ENT,  my_CTRL,  my_ALT
     ),
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                               KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
         ES_LBRC, ES_RBRC, ES_LCBR, ES_RCBR, ES_LPRN, ES_RPRN,                             KC_PGUP, KC_PGDN, KC_HOME, KC_END,  KC_DEL,  KC_TRNS,
         ES_IEXL, ES_EXLM, ES_IQUE, ES_QUES, ES_AT,   ES_EQL,                              KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, ES_TILD, ES_CCED,
-        QK_REP,  ES_PLUS, ES_ASTR, ES_SCLN, ES_GRAVE,ES_QUOT,                             ES_BSLS, ES_PIPE, ES_LABK, ES_RABK, ES_DQUO, QK_REP,
+        QK_REP,  ES_PLUS, ES_ASTR, ES_SCLN, ES_MORD,ES_QUOT,                             ES_BSLS, ES_PIPE, ES_LABK, ES_RABK, ES_DQUO, QK_REP,
                                             KC_TRNS, KC_TAB, KC_ESC,            KC_TRNS, KC_BSPC, KC_TRNS
     ),
 
