@@ -11,7 +11,8 @@
 
 #define my_CTRL OSM(MOD_LCTL | MOD_RCTL)
 #define my_SHFT OSM(MOD_LSFT | MOD_RSFT)
-#define my_ALT OSM(MOD_LALT | MOD_RALT)
+#define my_LALT LALT(ES_LABK)
+#define my_RALT LALT(ES_RABK)
 #define my_GUI OSM(MOD_LGUI | MOD_RGUI)
 #define my_CA OSM(MOD_LCTL | MOD_LALT)
 #define my_SPC LT(_EXT,KC_SPC)
@@ -24,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  ES_Q,    ES_W,    ES_E,    ES_R,    ES_T,                                ES_Y,    ES_U,    ES_I,    ES_O,    ES_P,    KC_BSPC,
         my_GUI,  ES_A,    ES_S,    ES_D,    ES_F,    ES_G,                                ES_H,    ES_J,    ES_K,    ES_L,    ES_NTIL, ES_ACUT,
         my_SHFT, ES_Z,    ES_X,    ES_C,    ES_V,    ES_B,                                ES_N,    ES_M,    ES_COMM, ES_DOT,  ES_MINS, my_SHFT,
-                                            my_ALT, my_CTRL, my_SPC,            my_ENT,  my_CTRL,  my_ALT
+                        	OSM(MOD_LALT), OSM(MOD_LCTL), my_SPC,            my_ENT,  OSM(MOD_RCTL),  OSM(MOD_RALT)
     ),
 
     [_EXT] = LAYOUT(
@@ -36,10 +37,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN] = LAYOUT(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_PGUP, KC_PGDN, KC_HOME, KC_END,  KC_DEL,  KC_F12,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_PGUP, KC_PGDN, KC_HOME, KC_END,  KC_DEL,  KC_TRNS,
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS,
-        QK_BOOT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, QK_BOOT,
+	my_LALT, my_RALT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, QK_BOOT,
                                             KC_MUTE, KC_VOLD, KC_VOLU,          KC_TRNS, KC_TRNS, KC_TRNS
     )
 
